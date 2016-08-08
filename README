@@ -32,6 +32,6 @@ Anontool depends on the following:
     - For more information on what you can do with the sample applications
     have a look in /doc/README.
 
-# MAINTENANCE
-
-    This software is no longer maintained.
+# My contribution
+- I have added filteration rule in code. It will only anonymize private address. Public address will remain unanonymized.
+- I have also added one more argument in usage of it. You can specify number of packet to anonymize.
