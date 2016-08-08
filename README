@@ -1,0 +1,37 @@
+# anontool - an open source anonymization tool
+
+
+# DEPENDS
+Anontool depends on the following:
+(Ubuntu aptitude packages used as a reference)
+    - libglib2.0-dev
+    - libnet1-dev
+    - libpcre3, libpcre3-dev
+    - libpcap0.8-dev
+
+# COMPILATION
+
+    - Just type 'make' :-)
+    - See below for some important usage notes.
+
+# NOTES - USAGE
+
+    - /lib/anonlib.so is the shared library containing the implementation
+    of the anonymization framework. Applications are linking onto this
+    library.
+
+    - In the /applications/ folder, 3 small apps are provided.
+
+    - Anontool depends on libnids. For the user's convenience, a fairly
+    customized version is included under /lib/libnids/. Currently, I'm
+    not considering including a make rule for newer versions of libnids.
+    However, bear in mind that /lib/libnids/src/libnids.so.1.21 MUST BE
+    visible from your loader when attempting to execute an application -
+    the simplest way to do that is setting your library path accordingly.
+
+    - For more information on what you can do with the sample applications
+    have a look in /doc/README.
+
+# MAINTENANCE
+
+    This software is no longer maintained.
